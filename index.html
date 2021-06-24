@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>FlanoSwap</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="icon" href="https://flanoswap.finance/images/logo.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+        .body {
+            font-family: 'Paytone One', sans-serif;
+            color: #321;
+            background: #ffecf4;
+            padding: 100px 0;
+
+        }
+
+        .header {
+            width: 570px;
+            margin: 0 auto;
+            height: 90px;
+            margin-bottom: 10px;
+        }
+
+        .header .flan {
+            width: 120px;
+            float: left;
+            height: 100%;
+        }
+
+        .header img {
+            width: 100%;
+            height: auto;
+        }
+
+        .social {
+            display: flex;
+            justify-content: flex-end;
+            line-height: 110px;
+            width: 140px;
+            float: right;
+            height: 100%;
+        }
+
+        .social a {
+            display: block;
+            width: 30px;
+            height: 30px;
+            margin-left: 15px;
+        }
+
+        .social img {
+            width: 100%;
+            height: 100%;
+        }
+        .box {
+            width: 570px;
+            padding: 60px 0;
+            height: auto;
+            margin: 0 auto;
+            background: #fff;
+
+        }
+
+        .box img {
+            width: 100%;
+            height: auto;
+
+        }
+
+        .box h2 {
+            text-align: center;
+            font-size: 32px;
+            font-weight: 700;
+
+        }
+
+        .box h4 {
+            text-align: center;
+            width: 90%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+
+        div>p:nth-child(4) {
+            line-height: 30px;
+        }
+
+        .box p {
+            text-align: center;
+            font-size: 16px;
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+
+        .box .logo {
+            width: 180px;
+            height: auto;
+            margin: 40px auto;
+        }
+
+        .box a {
+            display: block;
+            padding: 20px 0;
+            width: 280px;
+            text-align: center;
+            background: #fd7e14;
+            color: #fff;
+            border-radius: 44px;
+            font-weight: 700;
+            font-size: 18px;
+            cursor: pointer;
+            margin: 40px auto;
+            text-decoration: none;
+        }
+
+        @media(max-width: 480px) {
+            .body {
+                padding: 20px 0;
+            }
+
+            .header {
+                width: 90%;
+                margin: 0 auto;
+                padding: 10px 0;
+                height: 45px;
+            }
+
+            .box {
+                width: 90%;
+                margin: 0 auto;
+                padding: 40px 0;
+            }
+
+            .header .flan {
+                width: 60px;
+                display: flex;
+                align-items: center;
+            }
+            .social {
+                line-height: 65px;
+            }
+            .social a {
+                width: 20px;
+                height: 20px;
+                
+            }
+            .social img {
+                width: 20px;
+                height: 20px;
+            }
+            .social {
+                width: 100px;
+                justify-content: flex-end;
+            }
+
+            .box h2 {
+                font-size: 24px;
+            }
+
+            .box h4 {
+                width: 80%;
+                margin: 15px auto;
+                font-size: 16px;
+            }
+
+            .box p {
+                font-size: 14px;
+                width: 90%;
+            }
+
+            .box a {
+                width: 220px;
+                margin: 20px auto;
+                font-size: 14px;
+            }
+
+            .box .logo {
+                width: 150px;
+                margin: 30px auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="body">
+        <div class="header">
+            <a href="https://flanoswap.finance" class="flan">
+                <img src="https://flanoswap.finance/images/logo-2.png" alt="">
+            </a>
+            <div class="social">
+                <a href="https://www.facebook.com/FlanoSwap">
+                    <img src="https://flanoswap.finance/images/facebook.png" alt="">
+                </a>
+                <a href="https://twitter.com/FlanoSwap">
+                    <img src="https://flanoswap.finance/images/twitter1.png" alt="">
+                </a>
+                <a href="https://t.me/FlanoSwap">
+                    <img src="https://flanoswap.finance/images/telegram1.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="box">
+            <h2>Welcome to FlanoSwap!</h2>
+            <div class="logo">
+                <img src="https://flanoswap.finance/img/token.png" alt="">
+            </div>
+            <h4>Hi {{$email_data['name']}}, thanks for getting started with FlanoSwap!</h4>
+            <p>We need a little more information to complete your registration including verification of your email address.</p>
+
+            <a href="#">Verify email address</a>
+            <p>If you have any questions, just reply to this email—we're always happy to help out.</p>
+        </div>
+    </div>
+</body>
+
+</html>
